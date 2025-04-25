@@ -14,8 +14,7 @@ public class Names
      */
     public Names()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -26,12 +25,22 @@ public class Names
      */
     public void sampleMethod()
     {
-       if(name.equal sara){
-         system.out.println("name : " + sara );}
-       else(namsysee.equal kimia){
-         system.out.print("name" + kimia);
+        String name1 = "vanier1";
+        String name2 = "vanier2";
+        
+       if(name1 == name2)
+       {
+           System.out.println("EQUAL");  
+       }
+       else{
+           System.out.println("The names are not Eqaul");
+       }
+       
     }
+    }
+
+    
          
-}
+
     
 

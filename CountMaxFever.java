@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
 /**
  * Write a description of class CountMaxFever here.
  *
@@ -27,22 +27,30 @@ public class CountMaxFever
         fever(temperatures);
     }
     //Q25
-    private String fever(ArrayList<Double>temperatures) {
-       for(double i = 0; i> 37.5; i++){
-           System.out.println(i);
+    public static void fever(ArrayList<Double>temperatures) {
+        int count =0;
+        double max = 0.0;
+       for(Double temp: temperatures){
+         if(temp>37.2){
+          count++;
+         }
+         if(temp>max){
+           max=temp; 
+         }
+         System.out.println("count" + count);
+         System.out.println("maximum temp"+ max);
+         //26
+         System.out.println("maximum element" + Collections.max(temperatures));
+         //27
+         Collections.sort(temperatures);
+         System.out.println("sorted list" + temperatures.getLast());
        }
-       return("fever : "+ );}
-    
-       
-    //Q27 
-        for (temperature i > current > i=++){
-          system.out.println(collections.sort);} 
-    
-        Q26
-        i would write same code but for the print i would write
-        system.out.println(collection.maxi);
     }
+    
+    
 }
+    
+
     
     
 
